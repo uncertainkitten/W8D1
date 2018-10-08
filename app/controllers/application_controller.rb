@@ -22,7 +22,7 @@ class ApplicationController < ActionController::Base
   end
 
   def require_login
-    if !logged_in?
+    unless logged_in?
       redirect_to root
     end
   end
