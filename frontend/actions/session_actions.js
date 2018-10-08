@@ -3,7 +3,6 @@ import {
   postSession,
   deleteSession
 } from '../util/session_api_util.js';
-import Redux from 'redux';
 
 export const RECEIVE_CURRENT_USER = "RECEIVE_CURRENT_USER";
 export const LOGOUT_CURRENT_USER = "LOGOUT_CURRENT_USER";
