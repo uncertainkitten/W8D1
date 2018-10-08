@@ -1,8 +1,12 @@
 import React from 'react';
+import GreetingContainer from './greeting_container';
 
 const App = () => (
   <div>
-    <h1>Oh my god it's APP COMPONENT in R-E-A-C-T!!!</h1>
+    <header>
+      <h1>Bench BnB (do u even lift)</h1>
+      <GreetingContainer />
+    </header>
   </div>
 );
 
