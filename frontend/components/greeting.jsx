@@ -1,5 +1,4 @@
 import React from 'react';
-import { logout } from '../actions/session_actions';
 import { Link } from 'react-router-dom';
 
 class Greeting extends React.Component {
@@ -7,8 +6,8 @@ class Greeting extends React.Component {
     if (this.props.currentUser) {
       return (
       <div>
-        <h2>Welcome, {this.props.currentUser}</h2>
-        <button onClick={logout()}>Logout!</button>
+        <h2>Welcome, {this.props.currentUser.username}</h2>
+        <button onClick={this.props.logout}>Logout!</button>
       </div>
       );
     } else {

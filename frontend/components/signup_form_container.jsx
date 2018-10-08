@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
-import SessionForm from 'session_form';
-import {signup} from 'session_actions';
+import SessionForm from './session_form';
+import {signup} from '../actions/session_actions';
 
 const mapStateToProps = (state, ownProps) => {
   let loggedIn;
@@ -13,7 +13,7 @@ const mapStateToProps = (state, ownProps) => {
 
   return ({
     loggedIn: loggedIn,
-    errors: state.errors,
+    errors: state.errors.session,
     formType: "Sign Up!"
   });
 };
