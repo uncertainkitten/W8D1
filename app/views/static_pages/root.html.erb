@@ -1,1 +1,9 @@
-<main id="root"><h1>Holy shit, Rails is actually working, what even?</h1></main>
+<% if logged_in?%>
+  <script type="text/javascript">
+    window.currentUser = <%= render(
+      "api/user.json.jbuilder",
+      user: current_user
+    ).html_safe %>
+  </script>
+<% end%>
+<main id="root"><h1>Rails working - React ain't.</h1></main>
